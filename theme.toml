@@ -1,0 +1,31 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "mml"
+license = "MIT"
+licenselink = "https://github.com/Cluas/mml/blob/master/LICENSE"
+description = "A blog theme for hugo."
+homepage = "https://github.com/Cluas/mml"
+tags = [
+  "blog",
+  "dark",
+  "theme"
+]
+features = [
+  "cover-image",
+  "favicon",
+  "multilingual",
+  "pagination",
+  "syntax-highlighting",
+]
+min_version = "0.41"
+
+[author]
+  name = "Cluas"
+  homepage = "https://cluas.me"
+
+# If porting an existing theme
+[original]
+  name = "LeaveIt"
+  homepage = "https://liuzhichao.com/"
+  repo = "https://github.com/liuzc/LeaveIt"
