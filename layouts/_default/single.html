@@ -1,11 +1,11 @@
 {{ define "content" }}
-<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+<article class="post-warp" itemscope itemtype="https://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="{{.Site.BaseURL }}" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</a> with ♥
                 <span class="post-time">
-                on <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2, 2006") }}</time>
+                on <time datetime='{{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}' itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2, 2006") }}</time>
                 </span>
                 in
                 {{ with .Params.categories }}
@@ -33,7 +33,7 @@
 
         {{ with .Params.featured_image }}
           {{ $img := . -}}
-          <img src="{{ printf "%s" $img }}" class="featured_image">
+          <img src='{{ printf "%s" $img }}' class="featured_image">
         {{ end }}
         <!-- end featured_image-->
         {{ $reImgIn := "<img src=\"([^\"]+)\" alt=\"([^\"]+)\">" }}
@@ -58,7 +58,7 @@
             {{ with .Permalink }}
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href={{ . }}>{{ . }}</span>
+                    <a href={{ . }}>{{ . }}</a>
             </p>
             {{ end }}
             {{ with .Site.Params.license }}
@@ -74,7 +74,7 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s):
             {{ range . }}
-            <span class="tag"><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">
+            <span class="tag"><a href='{{ "tags/" | absURL }}{{ . | urlize }}/'>
                     #{{.}}</a></span>
             {{ end }}
             </section>

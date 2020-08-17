@@ -109,7 +109,7 @@ $$
 ## PlantUML
 
 **PlantUML is supported by the
-[official server](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)**
+[official server](https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)**
 
 To enable KaTex globally set the parameter `plantuml` to `true` in a project's
 `config.toml`
@@ -285,7 +285,7 @@ preserveTaxonomyNames = true
     baiduAnalytics = ""
     googleAnalytics = "" # Google 统计 id
 
-    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+    license= '本文采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "" # Your client ID

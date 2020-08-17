@@ -20,7 +20,7 @@
                 {{ $currentPage := . }}
                 <span class="menu">
                 {{ range .Site.Menus.main }}
-                <a class="menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                <a class='menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}' href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                 {{ end }}
                 <span class="divide"></span>
                 <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
@@ -49,7 +49,7 @@
                 <nav class="mb-md">
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
-                        <a class="menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">
+                        <a class='menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}' href="{{ .URL }}" title="{{ .Title }}">
                             <h3>{{ .Name }}</h3>
                             <div class="menu-active"></div>
                         </a>

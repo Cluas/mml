@@ -2,7 +2,7 @@
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "WebSite",
     "url": "{{ .Permalink }}",
     "name": "{{ .Site.Title }}",
@@ -17,7 +17,7 @@
 {{ if .IsPage }}
 <script type="application/ld+json">
 {
-    "@context" : "http://schema.org",
+    "@context" : "https://schema.org",
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
